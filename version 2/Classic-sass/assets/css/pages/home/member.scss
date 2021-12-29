@@ -1,0 +1,65 @@
+.member {
+    padding: 7rem 0 0 0;
+    background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+    position: relative;
+    height: 95vh;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/texture-geometric-shapes-colors-min-uai-1440x798.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__info {
+        &-image {
+            margin-bottom: 4rem;
+            img {
+                width: 8rem;
+                border-radius: 50%;
+            }
+        }
+        &-describe {
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            line-height: 1.75;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        &-note {
+            font-size: 14px;
+            display: block;
+            margin-top: 27px;
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+}
+
+@media(min-width:576px) and (max-width:768px) {
+    .member {
+        &__info {
+            &-describe {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .member {
+        height: 100vh;
+        &__info {
+            &-describe {
+                font-size: 18px;
+                line-height: 1.3;
+            }
+        }
+    }
+}

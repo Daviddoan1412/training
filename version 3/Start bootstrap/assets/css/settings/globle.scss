@@ -1,0 +1,63 @@
+/*
+Theme name : Start Bootstrap
+Theme description : As a member I want watch your portfolio
+Author : Daviddoan
+Version : 3.0.0
+*/
+
+
+/*
+ ================== Table Of Content ==================
+ 1,Reset
+ 2,Header
+*/
+
+
+/* ================== 1,Reset Css ================== */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.height {
+    height: 100%;
+}
+
+.header__menu-list .list_item .active {
+    background: #1abc9c;
+    padding: 15px 12px;
+    border-radius: 7px;
+    &:hover {
+        color: #fff;
+    }
+    @media (max-width: 767px) {
+        background: transparent;
+        color: #1abc9c;
+        padding: 0;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}

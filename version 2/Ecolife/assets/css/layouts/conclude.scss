@@ -1,0 +1,27 @@
+.conclude {
+    .content_1 {
+        display: flex;
+        padding: 3rem 10px;
+        margin: 0 -15px;
+        font-size: 14px;
+    }
+    .content {
+        padding: 3rem 0;
+        margin: 0 -15px;
+        img {
+            width: 25rem;
+            padding: 0 20px;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .conclude {
+        .content_1 {
+            justify-content: center;
+        }
+        .content {
+            justify-content: center;
+        }
+    }
+}

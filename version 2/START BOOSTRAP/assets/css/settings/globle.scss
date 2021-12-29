@@ -1,0 +1,106 @@
+/*
+Theme name : Start Bootstrap
+Theme description : As a member I want watch your portfolio
+Author : Daviddoan
+Version : 2.0.0
+*/
+
+
+/*
+ ================== Table Of Content ==================
+ 1,Reset
+ 2,Header
+ 3,Banner
+ 4,Page
+ 5,Service
+ 6,Portfolio
+ 7,Contact
+ 8,Footer
+*/
+
+
+/* ================== 1,Reset Css ================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify_content_space_between {
+    justify-content: space-between;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.flex_direction_column {
+    flex-direction: column;
+}
+
+.align_items_center {
+    align-items: center;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+.height {
+    height: 100%;
+}
+
+.ml_auto {
+    margin-left: auto;
+}
+
+.mr_auto {
+    margin-right: auto;
+}
+
+.mx_auto {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 0.5rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    line-height: 1.2;
+}

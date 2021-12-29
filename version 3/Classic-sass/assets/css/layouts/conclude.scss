@@ -1,0 +1,29 @@
+.conclude {
+    padding: 4rem 0;
+    background-color: #141618;
+    &__content {
+        @include breakpoint(768) {
+            flex-direction: column;
+        }
+        &-left {
+            color: #fff;
+            font-size: 15px;
+            @include breakpoint(768) {
+                margin-bottom: 20px;
+            }
+        }
+        &-list {
+            .list_item {
+                margin-left: 20px;
+                a {
+                    font-size: 15px;
+                    color: #fff;
+                    &:hover {
+                        color: #e9168c;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

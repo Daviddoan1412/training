@@ -1,0 +1,36 @@
+.static_area {
+    margin: 6rem 0;
+    .static {
+        border: 1px solid#ebebeb;
+        border-radius: 5px;
+        padding: 0 20px;
+        &__content {
+            padding: 36px 5px;
+            h2 {
+                color: #253237;
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: capitalize;
+                line-height: 22px;
+                margin-bottom: 0;
+            }
+            p {
+                line-height: 20px;
+                color: #666;
+                font-size: 13px;
+                margin: 0;
+            }
+            .static_image {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .static_area {
+        .static__content {
+            margin-bottom: 15px;
+        }
+    }
+}

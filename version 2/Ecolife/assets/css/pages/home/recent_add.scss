@@ -1,0 +1,21 @@
+.deal {
+    .seller {
+        &__content {
+            &:hover .add_seller {
+                top: 92%;
+            }
+        }
+    }
+}
+
+@media(min-width: 321px) and (max-width:576px) {
+    .deal {
+        .seller {
+            &__content {
+                &:hover .add_seller {
+                    top: 92%;
+                }
+            }
+        }
+    }
+}

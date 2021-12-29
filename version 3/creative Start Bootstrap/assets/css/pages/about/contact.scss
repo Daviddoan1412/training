@@ -1,0 +1,57 @@
+.contact {
+    padding: 9rem 0;
+    background-color: #fff;
+    &__content {
+        &-title {
+            h2 {
+                font-size: 3.5rem;
+                color: #212529;
+            }
+        }
+        &-custom {
+            margin: 20px 0 30px 0;
+            span {
+                height: 3px;
+                background-color: #f4623a;
+                width: 5.5rem;
+            }
+        }
+        &-describe {
+            margin-bottom: 4rem;
+            p {
+                color: #6c757d;
+                font-size: 18px;
+            }
+        }
+    }
+    &__info {
+        @include breakpoint(576) {
+            margin-bottom: 30px;
+        }
+        &-icon {
+            a {
+                color: #6c757d;
+                font-size: 5rem;
+                &:hover {
+                    color: #6c757d;
+                }
+            }
+        }
+        &-describe {
+            p {
+                color: #212529;
+                font-size: 17px;
+            }
+        }
+        &-email {
+            color: #f4623a;
+            font-size: 17px;
+            text-decoration: none;
+            background-color: transparent;
+            &:hover {
+                color: #d6370c;
+                text-decoration: underline;
+            }
+        }
+    }
+}

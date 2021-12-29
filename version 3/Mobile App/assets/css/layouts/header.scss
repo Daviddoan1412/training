@@ -1,0 +1,225 @@
+.header {
+    background-color: #fff;
+    height: 80px;
+    line-height: 80px;
+    @include breakpoint(992) {
+        position: relative;
+    }
+    &__menu {
+        &-logo {
+            font-size: 22px;
+            color: #0061f2;
+            font-weight: 500;
+        }
+        &-right.show {
+            max-height: 150vh;
+            transition: .5s;
+            @include breakpoint(992) {
+                overflow: visible;
+            }
+        }
+        &-right {
+            align-items: center;
+            @include breakpoint(992) {
+                z-index: 999;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                background-color: #fff;
+                justify-content: flex-start;
+                align-items: flex-start;
+                max-height: 0;
+                overflow: hidden;
+                transition: 0;
+            }
+            &-list {
+                margin-right: 10rem;
+                margin-bottom: 0;
+                align-items: center;
+                @include breakpoint(992) {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+                .list_item {
+                    margin-left: 2rem;
+                    @include breakpoint(992) {
+                        line-height: 4rem;
+                    }
+                    &:nth-child(2) {
+                        position: relative;
+                    }
+                    .dropdown_menu.show {
+                        max-height: 150vh;
+                        transition: .5s;
+                    }
+                    .dropdown_menu {
+                        position: absolute;
+                        top: 93%;
+                        right: -200%;
+                        min-width: 68rem;
+                        border: none;
+                        box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+                        padding: 0;
+                        overflow: hidden;
+                        color: #687281;
+                        text-align: left;
+                        list-style: none;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border-radius: 0.5rem;
+                        z-index: 1000;
+                        margin: 0.25rem 0 0;
+                        max-height: 0;
+                        transition: .5s;
+                        @include breakpoint(768) {
+                            top: 100%;
+                            left: 0;
+                        }
+                        @include breakpoint(576) {
+                            min-width: 45rem;
+                        }
+                        @include breakpoint(425) {
+                            min-width: 30rem;
+                        }
+                        @include breakpoint(375) {
+                            width: 10rem;
+                        }
+                        @include breakpoint(320) {
+                            width: 8rem;
+                        }
+                        &-left {
+                            background-image: url(../images/dropdown.jpg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            position: relative;
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            @include breakpoint(768) {
+                                display: none;
+                            }
+                            &::before {
+                                background-color: #0061f2;
+                                opacity: 0.7;
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                            }
+                            .content {
+                                position: absolute;
+                                z-index: 1000000;
+                                @include breakpoint(768) {
+                                    display: none;
+                                }
+                                &-describe {
+                                    color: #fff;
+                                    font-size: 18px;
+                                    line-height: 29px;
+                                    text-align: center;
+                                    padding: 0 7px;
+                                }
+                                &-button {
+                                    .button {
+                                        display: inline-block;
+                                        margin-top: 10px;
+                                        padding: 13px 30px;
+                                        font-weight: 700;
+                                        letter-spacing: 0.15em;
+                                        text-transform: uppercase;
+                                        color: #0061f2;
+                                        border-radius: 50rem;
+                                        line-height: 1.5;
+                                        background-color: #fff;
+                                        border-color: #fff;
+                                        cursor: pointer;
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &-right {
+                            .dropdown-title {
+                                color: #0061f2;
+                                padding: 0.7rem 1.5rem;
+                                margin-bottom: 0;
+                                line-height: 1.2;
+                                font-size: 18px;
+                            }
+                            .dropdown-item {
+                                line-height: 1.2;
+                                display: block;
+                                width: 100%;
+                                padding: 0.45rem 1.5rem;
+                                clear: both;
+                                font-weight: 400;
+                                color: #1f2d41;
+                                text-align: inherit;
+                                white-space: nowrap;
+                                background-color: transparent;
+                                border: 0;
+                                font-size: 16px;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                            .dropdown-divider {
+                                border: 0;
+                                height: 0;
+                                margin: 0.65rem 0;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                    &-link {
+                        font-size: 18px;
+                        font-weight: 300;
+                        margin-left: 35px;
+                        color: #7f7f7f;
+                        i {
+                            padding-left: 8px;
+                        }
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            &-button {
+                @include breakpoint(992) {
+                    margin-left: 5rem;
+                }
+                .link {
+                    background-color: #0061f2;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 400;
+                    width: 150px;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 30px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &-bar {
+            @include min-breakpoint(993) {
+                display: none;
+            }
+            .bar {
+                font-size: 2rem;
+                color: #3a3838;
+            }
+        }
+    }
+}

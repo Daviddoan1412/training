@@ -1,0 +1,67 @@
+/*
+Theme name : Classic-saas
+Theme description : As a member I want watch your portfolio
+Author : Daviddoan
+Version : 3.0.0
+*/
+
+
+/*
+ ================== Table Of Content ==================
+ 1, Reset css
+ 2, Header
+ 3, Banner
+ 4, Post
+ 5, Video
+ 6, Brand
+ 7, Process
+ 8, Member
+ 9, Plan
+ 10, Footer
+ 11, Conclude
+*/
+
+
+/* ================== 1,Reset Css ================== */
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.z-1 {
+    z-index: 1;
+    position: relative;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.height {
+    height: 100%;
+}
+
+.border_right {
+    border-right: 1px solid rgba(255, 255, 255, .15);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}

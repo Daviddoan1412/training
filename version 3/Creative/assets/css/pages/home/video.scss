@@ -1,0 +1,76 @@
+.video {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: #fff;
+    position: relative;
+    &__content {
+        &-title {
+            font-size: 3.5rem;
+            color: #303133;
+            font-weight: 700;
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 2rem;
+            @include breakpoint(576) {
+                font-size: 3rem;
+            }
+        }
+        &-describe {
+            font-size: 18px;
+            color: #777777;
+            font-weight: 300;
+            line-height: 1.5;
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 3rem;
+            @include breakpoint(576) {
+                margin-bottom: 3rem;
+                font-size: 18px;
+            }
+        }
+    }
+    .play_video {
+        z-index: 10;
+        position: relative;
+        box-shadow: 0 55px 80px -40px rgba(0, 0, 0, .45);
+    }
+    .play_button {
+        margin-top: 0;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        text-align: center;
+        width: auto;
+        z-index: 998;
+        .button {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            line-height: 2.5em;
+            vertical-align: middle;
+            color: #303133;
+            background-color: #ffffff;
+            border-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 0 1.25em #ffffff4d;
+            transition: 0.4s;
+        }
+        &:hover .button {
+            width: 12rem;
+            height: 12rem;
+            box-shadow: 0 0 0 2em #ffffff4d;
+        }
+    }
+    .play_icon {
+        z-index: 999;
+        margin-top: 0;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        text-align: center;
+        width: auto;
+        cursor: pointer;
+    }
+}

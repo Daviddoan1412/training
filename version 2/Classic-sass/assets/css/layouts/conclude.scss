@@ -1,0 +1,34 @@
+.conclude {
+    padding: 4rem 0;
+    background-color: #141618;
+    &__content {
+        &-left {
+            color: #fff;
+            font-size: 15px;
+        }
+        &-list {
+            .list_item {
+                margin-left: 20px;
+                a {
+                    font-size: 15px;
+                    color: #fff;
+                    &:hover {
+                        color: #e9168c;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .conclude {
+        &__content {
+            flex-direction: column;
+            &-left {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.popular {
+    .popularTop {
+        &-title {
+            font-family: "Open Sans", sans-serif;
+            font-size: 24px;
+            color: #253237;
+            text-transform: capitalize;
+            line-height: 16px;
+            font-weight: 600;
+            margin: 0 0 15px;
+        }
+        &-describe {
+            color: #888;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            position: relative;
+            margin-top: 10px;
+        }
+    }
+    &__info {
+        margin: 5rem 2rem;
+        .block {
+            position: relative;
+            margin-bottom: 30px;
+            transition: .5s;
+            overflow: hidden;
+            cursor: pointer;
+            img {
+                transition: .5s ease-in-out;
+            }
+            &:hover img {
+                transform: scale(1.032);
+            }
+            .info {
+                position: absolute;
+                left: 40px;
+                top: 50%;
+                transform: translateY(-50%);
+                .popular__content-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    margin-bottom: 12px;
+                    line-height: 1;
+                    transition: .3s;
+                    &:hover {
+                        color: #4fb68d;
+                        text-decoration: none;
+                    }
+                }
+                .popular__content-describe {
+                    color: #888;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    margin-bottom: 12px;
+                    line-height: 1;
+                    display: block;
+                }
+                .popular_button {
+                    .button {
+                        color: #253237;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        line-height: 1;
+                        display: inline-block;
+                        transition: .3s;
+                        &:hover {
+                            transform: translateX(10px);
+                            color: #4fb68d;
+                            text-decoration: none;
+                        }
+                        i {
+                            font-size: 16px;
+                            text-align: center;
+                            border-radius: 50%;
+                            display: inline-block;
+                            color: #098;
+                            transform: translate(3px, 3px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

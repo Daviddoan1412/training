@@ -1,0 +1,33 @@
+.install {
+    padding: 5rem 0 0 0;
+    background-color: #fff;
+    &__content {
+        @include breakpoint(767) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &-left {
+            .title {
+                font-size: 2.5rem;
+                color: #212529;
+            }
+            .describe {
+                margin-bottom: 16px;
+                font-size: 18px;
+            }
+        }
+        &-right {
+            img {
+                width: 13rem;
+                margin-right: 20px;
+                height: 40px;
+            }
+        }
+    }
+    .wave {
+        height: 50px;
+        width: 100%;
+        color: #1f2d41;
+        margin-top: 70px;
+    }
+}

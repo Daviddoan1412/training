@@ -1,0 +1,82 @@
+/*
+Theme name : Ecolife
+Theme description : As a member I want watch your portfolio
+Author : Daviddoan
+Version : 1.0.3
+*/
+
+
+/*
+ ================== Table Of Content ==================
+ 1,Reset
+ 2,Header
+ 3,Banner
+ 4,Page
+ 5,Service
+ 6,Portfolio
+ 7,Contact
+ 8,Footer
+*/
+
+
+/* ================== 1,Reset Css ================== */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.z-1 {
+    z-index: 1;
+    position: relative;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.height {
+    height: 100%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* This class is added on scroll */
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+
+.border_right {
+    border-right: 1px solid white;
+}

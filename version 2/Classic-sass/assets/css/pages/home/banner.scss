@@ -1,0 +1,100 @@
+.banner {
+    padding: 7rem 0;
+    background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/texture-geometric-shapes-colors-min-uai-1440x798.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__content {
+        padding-top: 9rem;
+        animation-name: zoom-in;
+        transform: scale(1);
+        opacity: 1;
+        animation-duration: 1s;
+        z-index: 99;
+        position: relative;
+        &-text {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        &-title {
+            font-size: 4.8rem;
+            color: #fff;
+            font-weight: 500;
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+        }
+        &-describe {
+            font-size: 24px;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        &-button {
+            .banner_link {
+                position: relative;
+                z-index: 999;
+                font-size: 15px;
+                padding: 14px 40px 14px 40px;
+                color: #303133;
+                background-color: #ffffff;
+                border-radius: 15rem;
+                display: inline-block;
+                margin-top: 30px;
+                border: 1px solid #ffffff;
+                &:hover {
+                    color: #ffffff;
+                    background-color: transparent;
+                    border: 1px solid #ffffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__image {
+        animation-name: zoom-in;
+        transform: scale(1);
+        opacity: 1;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(.5);
+        opacity: .1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media(max-width:576px) {
+    .banner {
+        &__content {
+            padding-top: 2rem;
+            margin-bottom: 3rem;
+            &-title {
+                font-size: 3rem;
+                margin-bottom: 15px;
+            }
+            &-describe {
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,160 @@
+.banner {
+    position: relative;
+    padding: 9rem 0 0 0;
+    background: linear-gradient(to left, rgba(100, 66, 255, 0.5) 0%, rgba(144, 18, 255, 0.5)100%);
+    background: linear-gradient(to left, rgba(100, 66, 255, 0.5) 0%, rgba(144, 18, 255, 0.5)100%), url('../images/rawpixel-com-594859-unsplash-min-uai-1440x959.jpg') center/cover no-repeat;
+    &__content {
+        padding-top: 9rem;
+        animation-name: zoom-in;
+        transform: scale(1);
+        opacity: 1;
+        animation-duration: 1s;
+        z-index: 99;
+        position: relative;
+        &-text {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        &-title {
+            font-size: 7rem;
+            color: #fff;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+        }
+        &-describe {
+            font-size: 18px;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        &-button {
+            .button_left-link {
+                position: relative;
+                z-index: 999;
+                font-size: 15px;
+                padding: 14px 40px 14px 40px;
+                color: #ffffff;
+                border-radius: 5px;
+                display: inline-block;
+                background-color: #e9168c;
+                margin-top: 30px;
+                border: 1px solid #e9168c;
+                display: inline-block;
+                margin-right: 4rem;
+                font-weight: 700;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .button_right-link {
+                position: relative;
+                z-index: 999;
+                font-size: 15px;
+                padding: 14px 40px 14px 40px;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 30px;
+                border: 1px solid #ffffff;
+                display: inline-block;
+                font-weight: 700;
+                color: #303133;
+                background-color: #ffffff;
+                transition: .4s;
+                &:hover {
+                    background: transparent;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__image {
+        animation-name: zoom-in;
+        transform: scale(1);
+        opacity: 1;
+        animation-duration: 2s;
+        img {
+            width: 42rem;
+        }
+    }
+    &__wave {
+        svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 25rem;
+            z-index: 100;
+            color: white;
+            width: 100%;
+        }
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(.5);
+        opacity: .1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media(min-width:577px) and (max-width: 768px) {
+    .banner {
+        &__content {
+            padding-top: 2rem;
+            margin-bottom: 3rem;
+            &-title {
+                font-size: 5rem;
+                margin-bottom: 15px;
+            }
+            &-describe {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .banner {
+        &__content {
+            padding-top: 2rem;
+            margin-bottom: 3rem;
+            &-title {
+                font-size: 3.5rem;
+                margin-bottom: 15px;
+            }
+            &-describe {
+                font-size: 16px;
+            }
+            &-button {
+                .button_left-link {
+                    margin-right: 10px;
+                    padding: 12px 25px;
+                }
+                .button_right-link {
+                    padding: 12px 25px;
+                }
+            }
+        }
+        &__image {
+            img {
+                width: 25rem;
+            }
+        }
+        &__wave {
+            svg {
+                height: 20rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.footer {
+    background-color: #1b1d1f;
+    padding-bottom: 5rem;
+    &__content {
+        &-title {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        &-describe {
+            font-size: 15px;
+            color: #fff;
+            line-height: 1.5;
+        }
+        img {
+            width: 23rem;
+        }
+    }
+    .list {
+        line-height: 1.5;
+        a {
+            font-size: 15px;
+            color: #fff;
+            &:hover {
+                color: #e9168c;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .footer {
+        &__content {
+            margin-bottom: 30px;
+        }
+    }
+}

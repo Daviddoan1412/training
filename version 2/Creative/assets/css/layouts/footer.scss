@@ -1,0 +1,83 @@
+.footer {
+    background: #1b1d1f;
+    &__content {
+        padding: 108px 0;
+        color: #fff;
+    }
+    &__item {
+        &-list {
+            li {
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #fff;
+                    display: inline-block;
+                    &:hover {
+                        color: #e9168c;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .post-date {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 19px;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+        }
+        &-heading {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 14px;
+            letter-spacing: 0.6px;
+            margin-bottom: 27px;
+        }
+        &-sub {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        &-tagcloud {
+            a {
+                font-size: 12px;
+                padding: 2px 5px 2px 5px;
+                display: inline-block;
+                border: 1px solid;
+                border-radius: 4px;
+                margin: 0 5px 9px 0;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #fff;
+                border-color: rgba(255, 255, 255, .25);
+                &:hover {
+                    text-decoration: none;
+                    color: #e9168c;
+                }
+            }
+        }
+    }
+    &__last {
+        padding: 108px 0;
+        color: #fff;
+        text-align: center;
+        background: #141618;
+        &-icon {
+            i {
+                font-size: 24px;
+                padding: 0 9px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .button {
+        margin-right: 0;
+        padding: 14px 35px;
+    }
+    .footer {
+        display: none;
+    }
+}

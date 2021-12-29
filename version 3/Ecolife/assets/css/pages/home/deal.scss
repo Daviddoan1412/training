@@ -1,0 +1,31 @@
+.deal {
+    margin-top: 5rem;
+    .seller {
+        &__content {
+            &:hover .add_seller {
+                top: 92%;
+            }
+        }
+        .block {
+            .seller__content {
+                &:hover .add_seller {
+                    top: 87%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .deal {
+        .seller {
+            .block {
+                .seller__content {
+                    &:hover .add_seller {
+                        top: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

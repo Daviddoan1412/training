@@ -1,0 +1,213 @@
+.header {
+    background-color: #fff;
+    position: relative;
+    border-bottom: 1px solid rgba(234, 234, 234, .5);
+    &__menu {
+        &-logo {
+            color: rgba(34, 32, 32, 0.89);
+            font-size: 2.3rem;
+            font-weight: 700;
+            display: flex;
+        }
+        &-list {
+            display: flex;
+            .list__items {
+                padding: 3rem 0;
+                margin-left: 15px;
+                .link_item {
+                    color: rgba(34, 32, 32, 0.89);
+                    font-size: 16px;
+                    font-weight: 500;
+                    transition: .4s;
+                    &:hover {
+                        color: rgba(56, 56, 56, 0.5);
+                        text-decoration: none;
+                    }
+                }
+                .box {
+                    z-index: 999;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    &__item {
+                        width: 20%;
+                        background-color: #1b1d1f;
+                        padding: 27px;
+                        transition: 0.5s;
+                        &-title {
+                            color: #fff;
+                            font-size: 16px;
+                            margin-bottom: 20px;
+                            padding-left: 9px;
+                        }
+                    }
+                    .block__list {
+                        background-color: #1b1d1f;
+                        padding: 27px 0;
+                        margin: 0 -15px;
+                        transition: 0.5s;
+                    }
+                    .block__item {
+                        width: 25%;
+                        padding-left: 27px;
+                        &-title {
+                            color: #fff;
+                            font-size: 16px;
+                            margin-bottom: 20px;
+                            padding-left: 9px;
+                        }
+                    }
+                    .list {
+                        a {
+                            color: #fff;
+                            padding: 5px 9px 5px 9px;
+                            font-size: 14px;
+                            display: block;
+                            &:hover {
+                                color: rgba(255, 255, 255, .5);
+                                background-color: rgba(255, 255, 255, .03);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                &:hover .box {
+                    max-height: 90vh;
+                }
+                .block__extra {
+                    position: absolute;
+                    top: 100%;
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    z-index: 999;
+                }
+                &:hover .block__extra {
+                    max-height: 90vh;
+                }
+                .block__extra-item {
+                    .list_extra {
+                        position: relative;
+                        .extra__item {
+                            position: absolute;
+                            top: 0;
+                            right: 100%;
+                            width: 14rem;
+                            height: 46vh;
+                            background-color: #1b1d1f;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: 0.3s;
+                            z-index: 500;
+                            .extra_item-list {
+                                .link {
+                                    color: #fff;
+                                    padding: 5px 15px 5px 15px;
+                                    font-size: 14px;
+                                    display: block;
+                                    transition: .4s;
+                                }
+                                &:hover .link {
+                                    color: rgba(255, 255, 255, .5);
+                                    background-color: rgba(255, 255, 255, .03);
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        &:hover .extra__item {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                        &:hover .icon {
+                            color: rgba(255, 255, 255, .5);
+                            text-decoration: none;
+                        }
+                        &:hover .list_extra-link {
+                            color: rgba(255, 255, 255, .5);
+                            text-decoration: none;
+                        }
+                    }
+                    .block__extra-list {
+                        background-color: #1b1d1f;
+                        padding: 27px;
+                        margin: 0 -15px;
+                        transition: 0.5s;
+                        width: 25%;
+                        a {
+                            color: #fff;
+                            padding: 5px 9px 5px 9px;
+                            font-size: 14px;
+                            display: block;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                        .list_extra:hover {
+                            background-color: rgba(255, 255, 255, .03);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        &-bar {
+            display: flex;
+            .bar {
+                font-size: 3rem;
+                color: rgb(54, 53, 53);
+                &:hover {
+                    color: rgb(54, 53, 53);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__contact {
+        display: flex;
+        .list_contact {
+            margin-left: 2rem;
+        }
+        .link {
+            color: rgb(54, 53, 53);
+            font-size: 18px;
+        }
+    }
+}
+
+.left_extra {
+    left: 53%;
+}
+
+.left_shop {
+    left: 47%;
+}
+
+@media(min-width:769px) {
+    .header {
+        &__menu {
+            &-bar {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .header {
+        height: 80px;
+        line-height: 80px;
+        &__menu {
+            &-list {
+                display: none;
+            }
+        }
+        &__contact {
+            display: none;
+        }
+    }
+}

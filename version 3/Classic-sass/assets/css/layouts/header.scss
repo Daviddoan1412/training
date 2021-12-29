@@ -1,0 +1,218 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+    @include breakpoint(992) {
+        height: 80px;
+        line-height: 80px;
+    }
+    &__menu {
+        &-logo {
+            svg {
+                width: 3.8rem;
+            }
+        }
+        &-list.show {
+            max-height: 100vh;
+            transition: .5s;
+        }
+        &-list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            @include breakpoint(992) {
+                align-items: flex-start;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                max-height: 0;
+                transition: .5s;
+                flex-direction: column;
+                background-color: black;
+            }
+            .list__items {
+                padding: 3rem 0;
+                margin-left: 15px;
+                @include breakpoint(992) {
+                    line-height: 30px;
+                    padding: 10px 20px;
+                }
+                &-link {
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    transition: .4s;
+                    @include breakpoint(992) {
+                        color: #fff;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: rgba(56, 56, 56, 0.5);
+                    }
+                }
+                .box {
+                    z-index: 999;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    .list {
+                        a {
+                            color: #fff;
+                            padding: 5px 9px 5px 9px;
+                            font-size: 14px;
+                            display: block;
+                            &:hover {
+                                color: rgba(255, 255, 255, .5);
+                                background-color: rgba(255, 255, 255, .03);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    &__item {
+                        width: 20%;
+                        background-color: #1b1d1f;
+                        padding: 27px;
+                        transition: 0.5s;
+                        &-title {
+                            color: #fff;
+                            font-size: 16px;
+                            margin-bottom: 20px;
+                            padding-left: 9px;
+                        }
+                    }
+                    .block__list {
+                        background-color: #1b1d1f;
+                        padding: 27px 0;
+                        margin: 0 -15px;
+                        transition: 0.5s;
+                        .block__item {
+                            width: 25%;
+                            padding-left: 27px;
+                            &-title {
+                                color: #fff;
+                                font-size: 16px;
+                                margin-bottom: 20px;
+                                padding-left: 9px;
+                            }
+                            &-list {
+                                .list {
+                                    a {
+                                        color: #fff;
+                                        padding: 5px 9px 5px 9px;
+                                        font-size: 14px;
+                                        display: block;
+                                        &:hover {
+                                            color: rgba(255, 255, 255, .5);
+                                            background-color: rgba(255, 255, 255, .03);
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover .box {
+                    max-height: 90vh;
+                }
+                .block__extra {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    z-index: 999;
+                    &-item {
+                        justify-content: flex-end;
+                        .block__extra-list {
+                            background-color: #1b1d1f;
+                            padding: 27px;
+                            margin: 0 -15px;
+                            transition: 0.5s;
+                            width: 20%;
+                            a {
+                                color: #fff;
+                                padding: 5px 9px 5px 9px;
+                                font-size: 14px;
+                                display: block;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                            .list_extra:hover {
+                                background-color: rgba(255, 255, 255, .03);
+                            }
+                            .list_extra:hover .extra__item {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                            .list_extra {
+                                position: relative;
+                                &:hover .icon {
+                                    color: rgba(255, 255, 255, .5);
+                                }
+                                &:hover .list_extra-link {
+                                    color: rgba(255, 255, 255, .5);
+                                    text-transform: none;
+                                }
+                                .extra__item {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 100%;
+                                    width: 20rem;
+                                    height: 30vh;
+                                    background-color: #1b1d1f;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: 0.3s;
+                                    z-index: 500;
+                                    &-list {
+                                        .link {
+                                            color: #fff;
+                                            padding: 5px 15px 5px 15px;
+                                            font-size: 14px;
+                                            display: block;
+                                            transition: .4s;
+                                        }
+                                        &:hover .link {
+                                            color: rgba(255, 255, 255, .5);
+                                            background-color: rgba(255, 255, 255, .03);
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover .block__extra {
+                    max-height: 90vh;
+                }
+            }
+        }
+        &-bar {
+            display: flex;
+            &-button {
+                font-size: 3rem;
+                color: rgb(54, 53, 53);
+                text-decoration: none;
+                &:hover {
+                    color: rgb(54, 53, 53);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

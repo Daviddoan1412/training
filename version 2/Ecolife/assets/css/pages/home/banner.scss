@@ -1,0 +1,109 @@
+.banner {
+    height: 85vh;
+    &__content {
+        &-note {
+            font-size: 17px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #253237;
+            font-style: italic;
+            margin-bottom: 10px;
+            line-height: 1;
+            display: block;
+            animation-delay: 1s;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+        }
+        &-title {
+            font-size: 45px;
+            font-weight: 600;
+            color: #253237;
+            margin-bottom: 30px;
+            line-height: 1;
+            animation-delay: 1.2s;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+        }
+        &-describe {
+            font-size: 19px;
+            margin-bottom: 30px;
+            font-weight: 400;
+            color: #555;
+            animation-delay: 1.5s;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+        }
+        &-button {
+            .button {
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                display: inline-block;
+                background-color: #4fb68d;
+                color: #fff;
+                font-weight: 700;
+                border-radius: 30px;
+                font-size: 14px;
+                animation-delay: 1.6s;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-name: fadeInUp;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.banner_background_1 {
+    background-image: url(../images/sample-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_background_2 {
+    background-image: url(../images/sample-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media(max-width:576px) {
+    .banner {
+        height: 80vh;
+        &__content {
+            &-title {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+            &-describe {
+                font-size: 16px;
+            }
+        }
+    }
+}

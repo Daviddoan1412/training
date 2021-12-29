@@ -1,0 +1,80 @@
+.header {
+    height: 70px;
+    line-height: 70px;
+    // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    @include breakpoint(768) {
+        position: sticky;
+    }
+    &__menu {
+        &-logo {
+            font-size: 2rem;
+            color: #212529;
+            font-weight: 700;
+            &:hover {
+                color: #f4623a;
+            }
+        }
+        &-list.show {
+            max-height: 100vh;
+            transition: .5s;
+        }
+        &-list {
+            margin: 0;
+            @include min-breakpoint(768) {
+                align-items: center;
+            }
+            @include breakpoint(767) {
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                align-items: flex-start;
+                line-height: 50px;
+                max-height: 0;
+                overflow: hidden;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                transition: .5s;
+            }
+            @include breakpointminmax(568, 767) {
+                padding: 0 7rem;
+            }
+            @include breakpointminmax(320, 567) {
+                padding: 0 2rem;
+            }
+            .list_item {
+                margin-left: 25px;
+                &-link {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #212529;
+                    &:hover {
+                        color: #f4623a;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &-bar {
+            &-button {
+                font-size: 2.5rem;
+                color: rgba(0, 0, 0, 0.5);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 6px 8px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}

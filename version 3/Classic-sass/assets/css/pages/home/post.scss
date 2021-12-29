@@ -1,0 +1,25 @@
+.post {
+    padding: 9rem 0;
+    background-color: #fff;
+    &__content {
+        padding: 0 20px;
+        @include breakpoint(768) {
+            margin-bottom: 30px;
+        }
+        &-logo {
+            margin-bottom: 20px;
+            img {
+                width: 15rem;
+            }
+        }
+        &-title {
+            color: #303133;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        &-describe {
+            color: #777;
+            font-size: 14px;
+        }
+    }
+}

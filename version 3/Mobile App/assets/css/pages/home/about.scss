@@ -1,0 +1,45 @@
+.about {
+    padding: 9rem 0;
+    &__content {
+        margin: 0 20px;
+        @include breakpoint(767) {
+            margin: 0 10px 3rem 10px;
+        }
+        &-logo {
+            width: 15rem;
+            margin-bottom: 3rem;
+            @include breakpointminmax(576, 767) {
+                margin-bottom: 1rem;
+            }
+            @include breakpoint(575) {
+                margin-bottom: 0;
+            }
+        }
+        &-describe {
+            padding: 50px 0;
+            font-weight: 400;
+            font-size: 25px;
+            width: 100%;
+            color: #0061f2;
+            @include breakpointminmax(576, 767) {
+                padding: 30px 0;
+                font-size: 20px;
+            }
+            @include breakpoint(575) {
+                padding: 30px 0;
+                font-size: 18px;
+            }
+        }
+        &-note {
+            h3 {
+                font-size: 17px;
+                color: #2b2f33;
+            }
+            p {
+                font-weight: 300;
+                color: #c5ccd6;
+                font-size: 15px;
+            }
+        }
+    }
+}

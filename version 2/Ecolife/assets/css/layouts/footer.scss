@@ -1,0 +1,177 @@
+.footer {
+    &_left {
+        padding: 5rem 0;
+        &-logo {
+            margin-bottom: 2.5rem;
+            img {
+                width: 12rem;
+            }
+        }
+        &-describe {
+            font-size: 16px;
+        }
+    }
+    &_right {
+        padding: 5rem 0;
+        .describe {
+            font-size: 14px;
+        }
+        .email_field {
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+        }
+        .email {
+            height: 47px;
+            background: #fff;
+            border: 0;
+            color: #b1b1b1;
+            padding: 10px 120px 10px 20px;
+            display: inline-block;
+            width: 75%;
+            font-size: 14px;
+            border: none;
+            border-radius: 30px 0 0 30px;
+            outline: none;
+            overflow: visible;
+        }
+        .button {
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            background: #253237;
+            border: 0;
+            box-shadow: none;
+            padding: 0 20px;
+            line-height: 47px;
+            height: 47px;
+            border-radius: 0 30px 30px 0;
+            outline: none;
+            width: 25%;
+            transition: .5s;
+            &:hover {
+                background: #4fb68d;
+            }
+        }
+        .android {
+            margin-right: 15px;
+        }
+        .store {
+            img {
+                width: 15rem;
+            }
+        }
+        .list {
+            padding: 5px 0;
+            .link {
+                font-size: 14px;
+                line-height: 24px;
+                padding: 0;
+                display: block;
+                text-transform: capitalize;
+                color: #666;
+                margin-bottom: 0;
+                display: block;
+                position: relative;
+                transition: .5s;
+                &:hover {
+                    padding-left: 10px;
+                    color: #4fb68d;
+                    text-decoration: none;
+                }
+            }
+        }
+        .title {
+            font-size: 16px;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            color: #253237;
+            border-bottom: 1px solid #e3e3e3;
+            font-weight: 700;
+            line-height: 24px;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                width: 60px;
+                height: 2px;
+                background: #4fb68d;
+            }
+        }
+    }
+    .contact {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        &_icon {
+            margin-right: 15px;
+        }
+        &_info {
+            p {
+                font-size: 16px;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+            span {
+                font-size: 22px;
+                font-weight: 600;
+                color: #253237;
+                margin: 0;
+                display: block;
+                margin-top: 5px;
+                line-height: 30px;
+            }
+        }
+    }
+    .list_contact {
+        .list_item {
+            a {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                color: #666;
+                font-size: 24px;
+                padding: 0;
+                line-height: 36px;
+                border-radius: 100%;
+                text-align: center;
+                border: none;
+                z-index: 1;
+                margin-right: 25px;
+                transition: .5s;
+                &:hover {
+                    color: #4fb68d;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.background_left {
+    background: #f6f6f6;
+}
+
+.background_right {
+    background: #efefef;
+}
+
+@media(max-width:576px) {
+    .footer {
+        &_right {
+            .email {
+                padding-left: 15px;
+            }
+            .button {
+                padding: 0;
+            }
+            .store {
+                img {
+                    width: 13rem;
+                }
+            }
+        }
+    }
+}

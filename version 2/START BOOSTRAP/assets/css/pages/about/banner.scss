@@ -1,0 +1,99 @@
+.banner {
+    height: 100vh;
+    background-image: url(../images/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(92, 77, 66, 0.8);
+    }
+    &__content {
+        &-title {
+            h1 {
+                color: #fff;
+                font-size: 5.5rem;
+                font-weight: 700;
+            }
+        }
+        &-custom {
+            margin: 20px 0 30px 0;
+            span {
+                height: 3px;
+                background-color: #f4623a;
+                width: 5.5rem;
+            }
+        }
+        &-describe {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            margin-bottom: 6.5rem;
+            p {
+                color: rgba(255, 255, 255, 0.75);
+                font-size: 20px;
+            }
+        }
+        &-button {
+            &-link {
+                padding: 1.7rem 3.5rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 10rem;
+                font-size: 16px;
+                color: #fff;
+                background-color: #f4623a;
+                &:hover {
+                    color: #fff;
+                    background-color: #f24516;
+                    border-color: #ee3e0d;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:577px) and (max-width:768px) {
+    .banner {
+        &__content {
+            &-title {
+                h1 {
+                    font-size: 4rem;
+                }
+            }
+            &-describe {
+                width: 100%;
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .banner {
+        height: 90vh;
+        &__content {
+            &-title {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+            &-describe {
+                width: 100%;
+                margin-bottom: 30px;
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

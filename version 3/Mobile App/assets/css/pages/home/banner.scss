@@ -1,0 +1,89 @@
+.banner {
+    padding-top: 9rem;
+    background-color: #0061f2;
+    @include breakpoint(768) {
+        padding-top: 1rem;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 100px 0;
+        @include breakpointminmax(568, 768) {
+            padding: 7rem 0;
+        }
+        @include breakpoint(567) {
+            padding: 5rem 0;
+        }
+        &-title {
+            font-size: 35px;
+            color: white;
+            font-weight: 400;
+            padding-bottom: 20px;
+            @include breakpoint(567) {
+                font-size: 28px;
+            }
+        }
+        &-logo {
+            img {
+                height: 4rem;
+                margin-right: 20px;
+                width: 14rem;
+                @include breakpoint(567) {
+                    height: 4rem;
+                    margin-right: 20px;
+                    width: 12rem;
+                }
+            }
+        }
+        &-describe {
+            font-size: 20px;
+            font-weight: 400;
+            color: #8c99ea;
+            padding-bottom: 60px;
+            @include breakpoint(567) {
+                font-size: 16px;
+            }
+        }
+        &-note {
+            padding-top: 10px;
+            font-size: 15px;
+            color: #8c9aea;
+        }
+    }
+    &__right {
+        .device_wrapper {
+            max-width: 300px;
+            width: 100%;
+            margin-bottom: -9rem;
+            .device {
+                background-image: url(../images/portrait.png);
+                z-index: initial;
+                padding-bottom: 198.898071625%;
+                position: relative;
+                background-size: cover;
+                height: 100px;
+                &::after {
+                    content: "";
+                    background-image: url(../images/portrait.png);
+                    position: absolute;
+                    background-size: cover;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                }
+                .screen {
+                    z-index: -10000;
+                    top: 3.1855955679%;
+                    left: 6.8870523416%;
+                    width: 86.2258953168%;
+                    height: 93.6288088643%;
+                    position: absolute;
+                    background-size: cover;
+                    pointer-events: auto;
+                }
+            }
+        }
+    }
+}

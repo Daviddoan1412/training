@@ -1,0 +1,87 @@
+.video {
+    padding-top: 7rem;
+    background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+    position: relative;
+    &__content {
+        &-title {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            @include breakpoint(576) {
+                font-size: 3rem;
+            }
+        }
+        &-describe {
+            margin-bottom: -5rem;
+            font-size: 24px;
+            color: #fff;
+            font-weight: 300;
+            line-height: 1.5;
+            @include breakpoint(576) {
+                margin-bottom: -1rem;
+                font-size: 18px;
+            }
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/texture-geometric-shapes-colors-min-uai-1440x798.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .play_video {
+        z-index: 10;
+        position: relative;
+        transform: translateY(20%);
+        box-shadow: 0 55px 80px -40px rgba(0, 0, 0, .45);
+        &-button {
+            margin-top: 0;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            text-align: center;
+            width: auto;
+            z-index: 998;
+            .button {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                line-height: 2.5em;
+                vertical-align: middle;
+                color: #303133;
+                background-color: #ffffff;
+                border-color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 0 1.25em #ffffff4d;
+                transition: 0.4s;
+            }
+            &:hover .button {
+                width: 12rem;
+                height: 12rem;
+                box-shadow: 0 0 0 2em #ffffff4d;
+                text-decoration: none;
+            }
+        }
+        &-icon {
+            z-index: 999;
+            margin-top: 0;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            text-align: center;
+            width: auto;
+            cursor: pointer;
+        }
+    }
+}

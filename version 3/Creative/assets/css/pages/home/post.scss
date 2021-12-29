@@ -1,0 +1,28 @@
+.post {
+    padding: 5rem 0;
+    background-color: #fff;
+    &__content {
+        padding: 0 2rem;
+        @include breakpoint(577) {
+            margin-bottom: 3rem;
+        }
+        &-icon {
+            margin-bottom: 25px;
+            svg {
+                width: 6rem;
+            }
+        }
+        &-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #303133;
+            margin-bottom: 25px;
+        }
+        &-describe {
+            color: #777;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+    }
+}

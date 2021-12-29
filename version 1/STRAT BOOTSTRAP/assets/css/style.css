@@ -1,0 +1,521 @@
+/*
+Theme name : Start Bootstrap
+Theme description : As a member I want watch your portfolio
+Author : Daviddoan
+Version : 1.0.0
+*/
+
+
+/*
+ ================== Table Of Content ==================
+ 1,Reset
+ 2,Header
+ 3,Banner
+ 4,Page
+ 5,Service
+ 6,Portfolio
+ 7,Contact
+ 8,Footer
+*/
+
+
+/* ================== 1,Reset Css ================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify_content_space_between {
+    justify-content: space-between;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.flex_direction_column {
+    flex-direction: column;
+}
+
+.align_items_center {
+    align-items: center;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+.height {
+    height: 100%;
+}
+
+.ml_auto {
+    margin-left: auto;
+}
+
+.mr_auto {
+    margin-right: auto;
+}
+
+.mx_auto {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 0.5rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+/* ================== 2,Header Section ================== */
+
+.header {
+    height: 70px;
+    line-height: 70px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header .header__menu-logo {
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 700;
+}
+
+.header .header__menu-logo:hover {
+    color: #f4623a;
+}
+
+.header .header__menu-list .list_item {
+    margin-left: 25px;
+}
+
+.header .header__menu-list .link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.header .header__menu-list .link:hover {
+    color: #f4623a;
+}
+
+.header .header__menu-bar .button_bar {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:768px) {
+    .header .header__menu-list {
+        display: none;
+    }
+}
+
+@media(min-width:769px) {
+    .header .header__menu-bar {
+        display: none;
+    }
+}
+
+
+/* ================== 3, Banner Section ================== */
+
+.banner {
+    height: 100vh;
+    background-image: url(../images/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    position: relative;
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 77, 66, 0.8);
+}
+
+.banner .banner__content-title h1 {
+    color: #fff;
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.banner .banner__content-custom {
+    margin: 20px 0 30px 0;
+}
+
+.banner .banner__content-custom span {
+    height: 3px;
+    background-color: #f4623a;
+    width: 5.5rem;
+}
+
+.banner .banner__content-describe {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 6.5rem;
+}
+
+.banner .banner__content-describe p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+}
+
+.banner .banner__content-button .link_button {
+    padding: 1.7rem 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f4623a;
+}
+
+.banner .banner__content-button .link_button:hover {
+    color: #fff;
+    background-color: #f24516;
+    border-color: #ee3e0d;
+}
+
+@media(min-width:577px) and (max-width:768px) {
+    .banner .banner__content-title h1 {
+        font-size: 4rem;
+    }
+    .banner .banner__content-describe {
+        width: 100%;
+    }
+    .banner .banner__content-describe p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:576px) {
+    .banner .banner__content-title h1 {
+        font-size: 3rem;
+    }
+    .banner .banner__content-describe {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .banner .banner__content-describe p {
+        font-size: 16px;
+    }
+}
+
+
+/* ================== 4, Page Section ================== */
+
+.page {
+    padding: 9rem 0;
+    background-color: #f4623a;
+}
+
+.page .page__content-title h2 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.page .page__content-custom {
+    margin: 20px 0 30px 0;
+}
+
+.page .page__content-custom span {
+    height: 3px;
+    background-color: #fff;
+    width: 5.5rem;
+}
+
+.page .page__content-describe {
+    margin-bottom: 4.5rem;
+}
+
+.page .page__content-describe p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.page .page__content-button .link_button {
+    padding: 1.7rem 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    font-size: 16px;
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+.page .page__content-button .link_button:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+@media(max-width:576px) {
+    .page .page__content-title h2 {
+        font-size: 2.5rem;
+    }
+    .page .page__content-describe p {
+        font-size: 15px;
+    }
+}
+
+
+/* ================== 5, Service Section ================== */
+
+.service {
+    padding: 9rem 0;
+    background-color: #fff;
+}
+
+.service .service__content-title h2 {
+    font-size: 3.5rem;
+    color: #212529;
+}
+
+.service .service__content-custom {
+    margin: 20px 0 30px 0;
+}
+
+.service .service__content-custom span {
+    height: 3px;
+    background-color: #f4623a;
+    width: 5.5rem;
+}
+
+.service .service__content .icon {
+    color: #f4623a;
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+
+.service .service__content .title {
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 15px;
+}
+
+.service .service__content .describe {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+@media(min-width:577px) and (max-width:768px) {
+    .service .service__content {
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width:576px) {
+    .service .service__content-title h2 {
+        font-size: 2.5rem;
+    }
+    .service .service__content {
+        margin-bottom: 3rem;
+    }
+}
+
+
+/* ================== 5, Portfolio Section ================== */
+
+.portfolio .image_block {
+    margin: 0 -15px;
+    position: relative;
+}
+
+.portfolio .image_block .image_block-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+    background: rgba(244, 98, 58, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.portfolio .image_block .image_block-text .describe {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.portfolio .image_block .image_block-text .title {
+    font-size: 2rem;
+}
+
+.portfolio .image_block:hover .image_block-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ================== 6, Call Section ================== */
+
+.call {
+    background-color: #343a40;
+    padding: 9rem 0;
+}
+
+.call .call-title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.call .call_button .call_button-link {
+    padding: 1.7rem 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    font-size: 16px;
+    color: #343a40;
+    background-color: #fff;
+}
+
+.call .call_button .call_button-link:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+@media(max-width:576px) {
+    .call .call-title {
+        font-size: 18px;
+    }
+}
+
+
+/* ================== 7, Contact Section ================== */
+
+.contact {
+    padding: 9rem 0;
+    background-color: #fff;
+}
+
+.contact .contact__content-title h2 {
+    font-size: 3.5rem;
+    color: #212529;
+}
+
+.contact .contact__content-custom {
+    margin: 20px 0 30px 0;
+}
+
+.contact .contact__content-custom span {
+    height: 3px;
+    background-color: #f4623a;
+    width: 5.5rem;
+}
+
+.contact .contact__content-describe {
+    margin-bottom: 4rem;
+}
+
+.contact .contact__content-describe p {
+    color: #6c757d;
+    font-size: 18px;
+}
+
+.contact .contact__info .icon a {
+    color: #6c757d;
+    font-size: 5rem;
+}
+
+.contact .contact__info .describe p {
+    color: #212529;
+    font-size: 17px;
+}
+
+.contact .contact__info .email {
+    color: #f4623a;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.contact .contact__info .email:hover {
+    color: #d6370c;
+    text-decoration: underline;
+}
+
+@media(max-width:576px) {
+    .contact .contact__info {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ================== 8, Footer Section ================== */
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+.footer .footer_describe {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+@media(max-width:576px) {
+    .footer {
+        padding: 3rem 0;
+    }
+}

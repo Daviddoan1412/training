@@ -1,0 +1,42 @@
+.info {
+    padding: 12rem 0 9rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    &__content {
+        &-icon {
+            margin-bottom: 20px;
+            .link {
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                background-color: #0061f2;
+                font-size: 2rem;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        &-title {
+            font-size: 20px;
+            font-weight: 500;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        &-describe {
+            font-size: 15px;
+            font-weight: 400;
+            color: #697382;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .info {
+        &__content {
+            margin-bottom: 30px;
+        }
+    }
+}
